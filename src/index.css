@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-950 text-slate-100 font-sans antialiased;
+}
+
+@layer components {
+  .status-pill {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .status-available { @apply bg-emerald-500/20 text-emerald-400; }
+  .status-on-trip { @apply bg-amber-500/20 text-amber-400; }
+  .status-in-shop { @apply bg-orange-500/20 text-orange-400; }
+  .status-out-of-service { @apply bg-slate-500/20 text-slate-400; }
+  .status-draft { @apply bg-slate-500/20 text-slate-400; }
+  .status-dispatched { @apply bg-blue-500/20 text-blue-400; }
+  .status-completed { @apply bg-emerald-500/20 text-emerald-400; }
+  .status-cancelled { @apply bg-red-500/20 text-red-400; }
+  .status-pending { @apply bg-amber-500/20 text-amber-400; }
+  .status-on-duty { @apply bg-emerald-500/20 text-emerald-400; }
+  .status-off-duty { @apply bg-slate-500/20 text-slate-400; }
+  .status-suspended { @apply bg-red-500/20 text-red-400; }
+}
