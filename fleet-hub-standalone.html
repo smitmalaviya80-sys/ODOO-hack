@@ -105,7 +105,7 @@
           var em = this.email.value.trim();
           var pw = this.pass.value;
           var errEl = document.getElementById('loginError');
-          if (em === 'manager@fleet.com' && pw === 'fleet123') {
+          if (em === 'owner@fleet.com' && pw === 'owner@1') {
             save('user', { email: em, role: 'manager', name: 'Manager' });
             renderApp();
           } else {
@@ -364,3 +364,4 @@
   </script>
 </body>
 </html>
+
